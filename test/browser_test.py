@@ -10,6 +10,7 @@ import asyncio
 from browser_use import Agent
 from browser_use.browser.browser import Browser, BrowserConfig
 from langchain_ollama import ChatOllama
+from langchain_openai import ChatOpenAI
 
 browser = Browser(
 	config=BrowserConfig(
@@ -19,14 +20,13 @@ browser = Browser(
 )
 
 
+
+
 async def run_search() -> str:
     agent = Agent(
         task="Open Amazon.in and search for a 32-inch TV. Sort by rating and print price of first item",
         browser=browser,
-        llm=ChatOllama(
-            model="qwen2.5:14b",
-            num_ctx=32000,
-        ),
+        llm=ChatOpenAI(model='gpt-4o-mini'),
     )
 
     result = await agent.run()
