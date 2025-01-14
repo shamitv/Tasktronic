@@ -3,6 +3,12 @@ Automates web tasks
 
 ##Notes 
 
+To setup playwright, run the following command:
+
+```
+playwright install    
+```
+
 To start Chrome with remote debugging enabled, run the following command:
 
 #Windows
