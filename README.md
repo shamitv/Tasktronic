@@ -10,7 +10,6 @@ It can automate a sequence of tasks. For example :
              "Print name, delivery date, number of reviews and price for each retailer found. "
              "Need the TV by 25h Jan ",
 
-
 ![Sample Run](docs/images/agent_history.gif)
 
 ## Output
@@ -28,6 +27,23 @@ Result: Found the LG G4 TV 55 inch at multiple retailers:
    - **Reviews**: Not specified  
 
 3. **Amazon**, **Flipkart**, and **Vijay Sales**: Information not yet retrieved but searches were performed. ```
+```
+
+## How 
+
+It relies on an agent to 
+
+1. **Understand** the task
+2. **Plan** how to perform tasks
+3. **Generate** sequence of actions to be performed
+3. **Execute** the actions by
+a.    **generating** Playwright code for each web page
+b.   **executing** the code
+   c. **Sending** DOM and Screenshot to LLM
+   d.  **Interpret** the results
+   e. **Generate** more actions as needed
+7. **Summarize** the output
+
 
 ## Notes 
 
