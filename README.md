@@ -10,6 +10,8 @@ It can automate a sequence of tasks. For example :
              "Open Product page for first item that is not sponsored. "
              "Print name, number of reviews and price of first item",
 
+![Sample Run](docs/images/agent_history.gif)
+
 ##Notes 
 
 To set up playwright components, run the following command:
