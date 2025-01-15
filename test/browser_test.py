@@ -16,15 +16,21 @@ browser = Browser(
 	config=BrowserConfig(
 		headless=False,
 		cdp_url="http://localhost:9222",
+        extra_chromium_args=['--window-size=1000,1000'],
 	)
 )
 
 
 
 
-async def run_search() -> str:
+async def run_search() :
     agent = Agent(
-        task="Open Amazon.in and search for a 32-inch TV. Sort by rating and print price of first item",
+        task="Open Amazon.in and search for OLED TV 55 Inch. "
+             "Filter for at least 4 start rating. "
+             "Sort by price, high to low. "
+             "If item is sponsored, skip it."
+             "Open Product page for first item that is not sponsored. "
+             "Print name, number of reviews and price of first item",
         browser=browser,
         llm=ChatOpenAI(model='gpt-4o-mini'),
     )
