@@ -1,9 +1,18 @@
 # Tasktronic
-Automates web tasks
+##Automates web tasks
+
+It can automate a sequence of tasks. For example : 
+
+        task="Open Amazon.in and search for OLED TV 55 Inch. "
+             "Filter for at least 4 start rating. "
+             "Sort by price, high to low. "
+             "If item is sponsored, skip it."
+             "Open Product page for first item that is not sponsored. "
+             "Print name, number of reviews and price of first item",
 
 ##Notes 
 
-To setup playwright, run the following command:
+To set up playwright components, run the following command:
 
 ```
 playwright install    
