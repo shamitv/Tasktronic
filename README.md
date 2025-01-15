@@ -31,18 +31,18 @@ Result: Found the LG G4 TV 55 inch at multiple retailers:
 
 ## How 
 
-It relies on an agent to 
+Tasktronic operates through a systematic process:
 
-1. **Understand** the task
-2. **Plan** how to perform tasks
-3. **Generate** sequence of actions to be performed
-3. **Execute** the actions by
-a.    **generating** Playwright code for each web page
-b.   **executing** the code
-   c. **Sending** DOM and Screenshot to LLM
-   d.  **Interpret** the results
-   e. **Generate** more actions as needed
-7. **Summarize** the output
+1. **Task Comprehension:** Interprets the specified task.
+2. **Strategic Planning:** Develops an execution plan.
+3. **Action Sequence Generation:** Creates a series of actions to accomplish the task.
+4. **Execution Phase:**
+   - Generates Playwright scripts tailored for each target webpage.
+   - Executes these scripts.
+   - Transmits the Document Object Model (DOM) and screenshots to a Vision LLM (OpenAI or Local like Qwen 2.5).
+   - Analyzes the received data.
+   - Iteratively generates additional actions as necessary.
+5. **Result Summarization:** Compiles and presents the final output.
 
 
 ## Notes 
