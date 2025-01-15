@@ -25,12 +25,12 @@ browser = Browser(
 
 async def run_search() :
     agent = Agent(
-        task="Open Amazon.in and search for OLED TV 55 Inch. "
-             "Filter for at least 4 start rating. "
-             "Sort by price, high to low. "
-             "If item is sponsored, skip it."
-             "Open Product page for first item that is not sponsored. "
-             "Print name, number of reviews and price of first item",
+        task="Look up options for buying LG G4 TV 55 inch. "
+             "Find online retailers that can deliver to 400001 "
+             " TV must be G4 Model from LG, 55 inch. "
+             " Include Amazon, Flipkart, Vijay Sales, Croma, and Reliance Digital in retailers "
+             "Print name, delivery date, number of reviews and price for each retailer found. "
+             "Need the TV by 25h Jan ",
         browser=browser,
         llm=ChatOpenAI(model='gpt-4o-mini'),
     )
